@@ -68,8 +68,8 @@ function App() {
           className="popup__input popup__input_type_name"
           id="userName"
           type="text"
-          minlength="2"
-          maxlength="40"
+          minLength="2"
+          maxLength="40"
           name="userName"
           placeholder="Имя пользователя"
           required
@@ -80,8 +80,8 @@ function App() {
           className="popup__input popup__input_type_profession"
           id="userProfession"
           type="text"
-          minlength="2"
-          maxlength="200"
+          minLength="2"
+          maxLength="200"
           name="userProfession"
           placeholder="Расскажите о себе"
           required
@@ -100,8 +100,8 @@ function App() {
           className="popup__input popup__input_type_card-name"
           id="cardName"
           type="text"
-          minlength="2"
-          maxlength="30"
+          minLength="2"
+          maxLength="30"
           name="name"
           placeholder="Название"
           required
