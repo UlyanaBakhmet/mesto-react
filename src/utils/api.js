@@ -1,4 +1,4 @@
-import { apiConfig } from './constants.js';
+import { apiConfig } from "./constants.js";
 
 class Api {
   constructor({ url, headers }) {
@@ -82,10 +82,16 @@ class Api {
     return fetch(`${this._url}/users/me/avatar`, {
       method: "PATCH",
       headers: this._headers,
-      body: JSON.stringify({
-        avatar: avatar.link,
-      }),
+      body: JSON.stringify(avatar),
     }).then((res) => this._getResponseData(res));
+  }
+
+  //лайк/не лайк
+  changeLikeCardStatus(id, isLiked) {
+    if (isLiked) {
+      return this.addLike(id);
+    }
+    return this.deleteLike(id);
   }
 }
 
