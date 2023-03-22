@@ -110,7 +110,7 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-  //метод для обработки закрытия всех попапов
+  //метод обработки для закрытия всех попапов
   const closeAllPopups = () => {
     setIsEditAvatarPopupOpen(false);
     setIsAddPlacePopupOpen(false);

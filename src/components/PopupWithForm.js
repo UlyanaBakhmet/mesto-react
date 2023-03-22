@@ -24,7 +24,6 @@ function PopupWithForm({
           method="get"
           name={name}
           onSubmit={onSubmit}
-          noValidate
         >
           {children}
           <button className="popup__save-button" type="submit">
